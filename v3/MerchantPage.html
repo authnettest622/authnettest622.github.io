@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
    <!-- <script src="https://{[sfe[vip[2]]]}/v3/acceptUI.js"></script>-->
-   <!--<script src="acceptUI.js"></script>-->
+   <script src="../acceptUI.js"></script>
 </head>
 
 <body>
     <div>hello Merchant Page
-        <button   class="AcceptUI" data-billingAddressOptions='{"show":true, "required":false}' data-apiLoginID="6D3e4qL9" data-clientKey="76DjAcVjyU93pzH6SzCDx8x4V6GqaqrFrkX8Ua65Rfnzz9b8Z46AP8wKSkQbqMxn"
+        <button   class="AcceptUI" data-billingAddressOptions='{"show":true, "required":true}' data-apiLoginID="6D3e4qL9" data-clientKey="76DjAcVjyU93pzH6SzCDx8x4V6GqaqrFrkX8Ua65Rfnzz9b8Z46AP8wKSkQbqMxn"
             data-acceptUIFormBtnTxt="Pay Now!" data-acceptUIFormHeaderTxt="Accept Pay" data-responseHandler="callbackMerchant">Show Accept UI
             </button>
     </div>
@@ -23,7 +23,7 @@
             var myScripts = document.createElement("script");
             myScripts.type = "text/javascript";
            // myScripts.src = "acceptUI.js";
-			myScripts.src = "https://jstest.authorize.net/v3/AcceptUI.js";
+			myScripts.src = "../AcceptUI.js";
             (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(myScripts);
 }
   setTimeout(loadScript,1000);
