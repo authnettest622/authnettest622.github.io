@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="jquery.md5.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.min.js"></script>
   
-   <!-- <script  src="https://jstest.authorize.net/v1/Accept.js"></script> -->
-<style>
+    <script  src="https://jstest.authorize.net/v1/Accept.js"></script> 
+ <style>
 body {
      
 }
@@ -237,8 +238,20 @@ body {
 
 <script type="text/javascript">
  
- var fingerPrint;
+var fingerPrint;
+setTimeout(function(){ loadScript() }, 1000);
+
+function loadScript() {
+            var myScripts = document.createElement("script");
+            myScripts.type = "text/javascript";
+            myScripts.src = "https://jstest.authorize.net/v1/Accept.js";
+            (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(myScripts);
  
+
+ 	/*	require(['Accept'], function(accept){
+             Accept =   accept;
+        });*/
+}
 
  
 function setDefaultValue(event){
@@ -254,8 +267,8 @@ function setDefaultValue(event){
 }
 
 function setClientKeyDefaultValue(event){
-	document.getElementById('clientKey').value = '76DjAcVjyU93pzH6SzCDx8x4V6GqaqrFrkX8Ua65Rfnzz9b8Z46AP8wKSkQbqMxn';
-	}
+	document.getElementById('clientKey').value = '76DjAcVjyU93pzH6SzCDx8x4V6GqaqrFrkX8Ua65Rfnzz9b8Z46AP8wKSkQbqMxn' ;
+}
 
 
 
@@ -263,7 +276,7 @@ function setFingerPrintDefaultValue(event){
     var timer = Math.floor(Date.now() / 1000);
 	document.getElementById('transact').value = '';
 	document.getElementById('blob').value = '';
-	document.getElementById('loginID').value = '5gzmQ45X8';
+	document.getElementById('loginID').value = '6D3e4qL9';
 	document.getElementById('sequence').value = Math.round(Math.random()*timer); 
 	document.getElementById('timer').value = timer;
 	document.getElementById('amount').value = Math.round(Math.random()*100);
@@ -345,8 +358,9 @@ function setFingerPrintDefaultValue(event){
 	    	 authData.clientKey = document.getElementById('clientKey').value;
 	    }
         options.authData = authData ;
-		options.clientId = "accept-js-v2";
-		var response = Accept.dispatchData(options, callbackMerchant);
+         var response = Accept.dispatchData(options, 'callbackMerchant');
+       
+		
 	}
 
 	  function getCurrentTimeStamp() {
@@ -370,7 +384,7 @@ function setFingerPrintDefaultValue(event){
 	function createTransact(data) {
 
 		
-        var xobj = null, endPoint = "https://apitest.authorize.net/xml/v1/request.api";
+        var xobj = null, endPoint = "__WCO_Domain__/xml/v1/request.api";
         if (typeof XDomainRequest != "undefined"){
               xobj = new XDomainRequest();
          }
