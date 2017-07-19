@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Accept JS</title>
+	<meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script  src="https://jstest.authorize.net/v1/Accept.js"></script> 
+</head>
+<body>
+ <button type="submit" id="pay" class="btn btn-primary btn-lg btn-block" onclick="testEncrypt(event)">Pay</button>
+<script type="text/javascript">
+function testEncrypt(event) {
+		var options = {} , authData = {} , cardData = {};
+		cardData.cardNumber = '4111111111111111';//document.getElementById('cardNumber').value;
+		cardData.month = '11';//document.getElementById('MM').value;
+		cardData.year = '21';//document.getElementById('YY').value;
+		/*if ( document.getElementById('Zip').value != undefined)
+		{
+			cardData.zip = document.getElementById('Zip').value;
+		}
+		
+		if (document.getElementById('cardCode').value != undefined)
+		{
+			cardData.cardCode = document.getElementById('cardCode').value;
+		}
+		
+		if ( document.getElementById('fullName').value != undefined)
+		{
+			cardData.fullName = document.getElementById('fullName').value;
+		}*/
+		options.cardData = cardData;
+		/*if((document.getElementById('isFingerPrint').checked)) {
+	    	   authData.fingerprint = buildFingerPrint();
+	    }
+	    authData.apiLoginID = document.getElementById('loginID').value;
+	    if((document.getElementById('isClientKey').checked)){
+	    	 authData.clientKey = document.getElementById('clientKey').value;
+	    }*/
+		authData.apiLoginID='92tkCL7s';
+		authData.clientKey='96f2xu6b4E3X74ptcE77b49nN3Suh5444dMnWMyP5cFvVnM6Z8zyyT84xQFK53a4';
+
+        options.authData = authData ;
+		options.clientId = "accept-js-v2";
+		var response = Accept.dispatchData(options, callbackMerchant);
+	}
+
+    function callbackMerchant(response) {
+		if (response.messages.resultCode === 'Error') {
+			//closeModal();
+		//	populateErrorMessage(response);
+		} else {
+					document.getElementById('blob').value ='---'+response.opaqueData.dataDescriptor+ '\n'+'----'+response.opaqueData.dataValue;			
+				console.log(document.getElementById('blob').value);
+				//	createTransact(response.opaqueData.dataValue);
+		}
+	}
+
+</script>
+</body>
+</html>
