@@ -12,7 +12,7 @@
 
 <body>
     <div>hello Merchant Page
-        <button   class="AcceptUI" data-billingAddressOptions='{"show":true, "required":true}' data-apiLoginID="6D3e4qL9" data-clientKey="76DjAcVjyU93pzH6SzCDx8x4V6GqaqrFrkX8Ua65Rfnzz9b8Z46AP8wKSkQbqMxn"
+        <button   class="AcceptUI" data-billingAddressOptions='{"show":true, "required":true}' data-apiLoginID="92tkCL7s" data-clientKey="96f2xu6b4E3X74ptcE77b49nN3Suh5444dMnWMyP5cFvVnM6Z8zyyT84xQFK53a4"
             data-acceptUIFormBtnTxt="Pay Now!" data-acceptUIFormHeaderTxt="Accept Pay" data-responseHandler="callbackMerchant">Show Accept UI
             </button>
             <br/>
@@ -30,7 +30,7 @@
             var myScripts = document.createElement("script");
             myScripts.type = "text/javascript";
            // myScripts.src = "acceptUI.js";
-			myScripts.src = "../v3/acceptUI.js";
+			myScripts.src = "https://js.authorize.net/v3/acceptUI.js";
             (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(myScripts);
 }
   setTimeout(loadScript,1000);
