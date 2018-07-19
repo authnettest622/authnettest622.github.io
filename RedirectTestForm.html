@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function submitClicked(){
+var e = document.getElementById("urlListId");
+var curUrl = e.options[e.selectedIndex].value;
+
+document.aForm.action = curUrl;
+document.aForm.method="post"
+}
+</script>
+</head>
+<body>
+
+<h2>HTML Forms</h2>
+
+
+Choose the right url:
+<br>
+
+<select id="urlListId">
+  <option value="https://secure.authorize.net/customer/addPayment">Prod Add Payment profile</option>
+  <option value="https://secure.authorize.net/customer/editPayment" selected="selected">Prod Edit Payment Profile</option>
+  <option value="https://secure.authorize.net/customer/manage">Prod Manage payment profile</option>
+  
+  <option value="https://test.authorize.net/customer/addPayment">Certtest Add Payment Profile</option>
+  <option value="https://test.authorize.net/customer/editPayment" selected="selected">Certtest Edit Payment Profile</option>
+  <option value="https://test.authorize.net/customer/manage">Certtest Manage Payment Profile</option>
+  
+  <option value="https://secure.authorize.net/payment/payment">Prod Hosted Payment</option>
+  <option value="https://test.authorize.net/customer/editPayment" selected="selected">Certtest Hosted Payment</option>
+</select>
+
+<br>
+<br>
+<br>
+
+<form name="aForm" method="post">
+  Paste Token:<br>
+  <input type="text" name="Token" value="">
+  <br>
+  <input type="submit" value="Submit" onclick='submitClicked()'>
+</form> 
+
+</body>
+</html>
