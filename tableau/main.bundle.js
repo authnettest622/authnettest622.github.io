@@ -2328,7 +2328,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 var AnalyticsRoutes = [
-    { path: 'analytics', component: __WEBPACK_IMPORTED_MODULE_8__modules_analytics_v1_components_tableau_tableauView_component__["a" /* TableauViewComponent */] },
+    { path: 'tableau', component: __WEBPACK_IMPORTED_MODULE_8__modules_analytics_v1_components_tableau_tableauView_component__["a" /* TableauViewComponent */] },
     { path: 'tableauInbox', component: __WEBPACK_IMPORTED_MODULE_8__modules_analytics_v1_components_tableau_tableauView_component__["a" /* TableauViewComponent */] },
     { path: 'tableausearch', component: __WEBPACK_IMPORTED_MODULE_8__modules_analytics_v1_components_tableau_tableauView_component__["a" /* TableauViewComponent */] },
     { path: 'tableaualert', component: __WEBPACK_IMPORTED_MODULE_9__components_search_tableausearch_component__["a" /* TableauSearchComponent */] },
