@@ -2425,6 +2425,71 @@ var TableauAlertComponent = (function () {
 
 /***/ }),
 
+/***/ "./src/app/modules/analytics/v1/components/feed/tableaufeed.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<!-- <div class=\"container\" style=\"max-width:700px;margin-left:0px;margin-top:10px;margin-right:10px;\"> -->\r\n<!-- <div class=\"row\" style='margin-left: 1px; margin-right:10px'>    \r\n    <input class=\"form-control\" type=\"text\" placeholder=\"Search\" aria-label=\"Search\" style=\"margin-left:-15px;margin-bottom:10px;\">\r\n  </div>\r\n <div class=\"row\" style='margin-top:1px;margin-left: 0px; margin-right:10px;margin-bottom:10px;'>\r\n    <div style=\"width:100%; background-color: grey;margin-left:-15px;\">\r\n    <div style=\"text-align:center;\">\r\n        <button type=\"button\" class=\"btn btn-success\" style=\"width: 18%; float:left; margin: 1%;height:24px; background-color:#FFF;border-color: black;color:black;text-align:center;\"><span class=\"font-weight-bold \" style=\"font-style: normal;font-size: 6pt;margin-left:0px;text-align:center;\">TODAY</span></button>\r\n    </div>\r\n    <div >\r\n        <button type=\"button\" class=\"btn btn-success\" style=\"width: 20%; float:left; margin: 1%;height:24px; background-color:#FFF;border-color: black;color:black;text-align:center;\"><span class=\"font-weight-bold \" style=\"font-style: normal;font-size: 6pt;text-align:center;\">WEEK</span></button>\r\n    </div>\r\n    <div >\r\n        <button type=\"button\" class=\"btn btn-success\" style=\"width: 23%; float:left; margin: 1%;height:24px; background-color:#FFF;border-color: black;color:black;text-align:center;\"><span class=\"font-weight-bold \" style=\"font-style: normal;font-size: 6pt;text-align:center;\">MONTH</span></button>\r\n    </div>\r\n    <div >\r\n        <button type=\"button\" class=\"btn btn-success\" style=\"width: 30%; float:left; margin: 1%;height:24px; background-color:#FFF;border-color: black;color:black;text-align:center;\"><span class=\"font-weight-bold \" style=\"font-style: normal;font-size: 6pt;text-align:center;\">FILTER TAGS</span></button>\r\n    </div>\r\n    </div>\r\n  </div>  -->\r\n<div class=\"row panel panel-default\" style=\"margin-left:5px;margin-right:5px;margin-bottom:10px;\">\r\n    <div *ngIf=\"title==1\">\r\n        <div class=\"row\" style='margin-left: 1px;margin-top:5px;'>\r\n            <span style=\"margin-left:10px; text-align:left;font-style: normal;font-size: 6pt;color:#aaaa\"></span>\r\n            ALERT\r\n        </div>\r\n    </div>\r\n    <div *ngIf=\"title==2\">\r\n        <div class=\"row\" style='margin-left: 1px;margin-top:5px;'>\r\n            <span style=\"margin-left:10px; text-align:left;font-style: normal;font-size: 6pt;color:#aaaa\"></span>\r\n            REVENUE\r\n        </div>\r\n    </div>\r\n    <div *ngIf=\"title==3\">\r\n        <div class=\"row\" style='margin-left: 1px;margin-top:5px;'>\r\n            <span style=\"margin-left:10px; text-align:left;font-style: normal;font-size: 6pt;color:#aaaa\"></span>\r\n            PIPELINE\r\n        </div>\r\n    </div>\r\n    <div class=\"col-xs-2\" style=\"margin-top:20px;\">\r\n        <button type=\"button\" class=\"btn btn-success\" style=\"width: 50px;background-color: black; float:left; margin: 1%;height:20px;border-color: black;color:white;text-align:center;\">\r\n            <span class=\"font-weight-bold \" style=\"font-style: normal;font-size: 6pt;margin-left:0px;text-align:center;\">New</span>\r\n        </button>\r\n\r\n    </div>\r\n    <div class=\"col-xs-10\">\r\n        <p *ngIf=\"title==1\"class=\"thick\" style=\"margin-left:10px; text-align:left;font-style: bold;font-size: 10pt;margin-top:0px;\">\r\n               \r\n            Title Port Vitor Blandit\r\n            <span style=\"margin-right:10px;float:right; font-style: normal;font-size: 8pt;color:#aaaa\">3:04 pm </span>\r\n        </p>\r\n        <p *ngIf=\"title==2\"class=\"thick\" style=\"margin-left:10px; text-align:left;font-style: bold;font-size: 10pt;margin-top:0px;\">\r\n               \r\n                Title Nam Porttitor\r\n                <span style=\"margin-right:10px;float:right; font-style: normal;font-size: 8pt;color:#aaaa\">3:30 pm </span>\r\n            </p>\r\n            <p *ngIf=\"title==3\"class=\"thick\" style=\"margin-left:10px; text-align:left;font-style: bold;font-size: 10pt;margin-top:0px;\">\r\n               \r\n                    Title Vehicula Dolor\r\n                    <span style=\"margin-right:10px;float:right; font-style: normal;font-size: 8pt;color:#aaaa\">08 Feb 10:04 pm </span>\r\n                </p>\r\n        <p style=\"margin-left:10px;margin-top:-20px; text-align:left;font-style: normal;font-size: 8pt;color:#aaaa\">\r\n            @julesbrighton\r\n        </p>\r\n        <p style=\"margin-left:10px;margin-top:-20px; text-align:left;font-style: normal;font-size: 8pt;color:#aaaa\">\r\n            Curabiter lobortis id lorem id bibendum. Ut id consectetur magna.\r\n        </p>\r\n    </div>\r\n</div>\r\n<!-- </div>  -->"
+
+/***/ }),
+
+/***/ "./src/app/modules/analytics/v1/components/feed/tableaufeed.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = "/*Body Styling */\nh1 {\n  margin-top: 80px;\n  font-weight: bold; }\np {\n  margin-top: 25px;\n  margin-bottom: 25px; }\n.btn {\n  margin-left: 10px;\n  margin-right: 10px; }\n/* Boostrap Buttons Styling */\n.btn-default {\n  font-family: Raleway-SemiBold;\n  font-size: 13px;\n  color: rgba(108, 88, 179, 0.75);\n  letter-spacing: 1px;\n  line-height: 15px;\n  border: 2px solid rgba(108, 89, 179, 0.75);\n  border-radius: 40px;\n  background: transparent;\n  -webkit-transition: all 0.3s ease 0s;\n  transition: all 0.3s ease 0s; }\n.btn-default:hover {\n  color: #FFF;\n  background: rgba(108, 88, 179, 0.75);\n  border: 2px solid rgba(108, 89, 179, 0.75); }\n.btn-primary {\n  font-family: Raleway-SemiBold;\n  font-size: 13px;\n  color: rgba(58, 133, 191, 0.75);\n  letter-spacing: 1px;\n  line-height: 15px;\n  border: 2px solid rgba(58, 133, 191, 0.75);\n  border-radius: 40px;\n  background: transparent;\n  -webkit-transition: all 0.3s ease 0s;\n  transition: all 0.3s ease 0s; }\n.btn-primary:hover {\n  color: #FFF;\n  background: rgba(58, 133, 191, 0.75);\n  border: 2px solid rgba(58, 133, 191, 0.75); }\n.btn-success {\n  font-family: Raleway-SemiBold;\n  font-size: 10px;\n  color: rgba(103, 192, 103, 0.75);\n  letter-spacing: 1px;\n  line-height: 12px;\n  border: 1px solid rgba(103, 192, 103, 0.75);\n  border-radius: 40px;\n  background: transparent;\n  -webkit-transition: all 0.3s ease 0s;\n  transition: all 0.3s ease 0s;\n  float: left; }\n.btn-success:hover {\n  color: #FFF;\n  background: rgba(103, 192, 103, 0.75);\n  border: 2px solid rgba(103, 192, 103, 0.75); }\n.btn-info {\n  font-family: Raleway-SemiBold;\n  font-size: 13px;\n  color: rgba(91, 192, 222, 0.75);\n  letter-spacing: 1px;\n  line-height: 15px;\n  border: 2px solid rgba(91, 192, 222, 0.75);\n  border-radius: 40px;\n  background: transparent;\n  -webkit-transition: all 0.3s ease 0s;\n  transition: all 0.3s ease 0s; }\n.btn-info:hover {\n  color: #FFF;\n  background: rgba(91, 192, 222, 0.75);\n  border: 2px solid rgba(91, 192, 222, 0.75); }\n.btn-warning {\n  font-family: Raleway-SemiBold;\n  font-size: 13px;\n  color: rgba(240, 173, 78, 0.75);\n  letter-spacing: 1px;\n  line-height: 15px;\n  border: 2px solid rgba(240, 173, 78, 0.75);\n  border-radius: 40px;\n  background: transparent;\n  -webkit-transition: all 0.3s ease 0s;\n  transition: all 0.3s ease 0s; }\n.btn-warning:hover {\n  color: #FFF;\n  background: rgba(240, 173, 78, 0.75);\n  border: 2px solid rgba(240, 173, 78, 0.75); }\n.btn-danger {\n  font-family: Raleway-SemiBold;\n  font-size: 13px;\n  color: rgba(217, 83, 78, 0.75);\n  letter-spacing: 1px;\n  line-height: 15px;\n  border: 2px solid rgba(217, 83, 78, 0.75);\n  border-radius: 40px;\n  background: transparent;\n  -webkit-transition: all 0.3s ease 0s;\n  transition: all 0.3s ease 0s; }\n.btn-danger:hover {\n  color: #FFF;\n  background: rgba(217, 83, 78, 0.75);\n  border: 2px solid rgba(217, 83, 78, 0.75); }\np.thick {\n  font-weight: bold; }\n"
+
+/***/ }),
+
+/***/ "./src/app/modules/analytics/v1/components/feed/tableaufeed.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TableauFeedComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var TableauFeedComponent = (function () {
+    function TableauFeedComponent() {
+        this.opened = false;
+        this.toggle = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* EventEmitter */]();
+        console.log("rouyting");
+    }
+    TableauFeedComponent.prototype.ngOnInit = function () {
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
+        __metadata("design:type", Object)
+    ], TableauFeedComponent.prototype, "opened", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
+        __metadata("design:type", String)
+    ], TableauFeedComponent.prototype, "title", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Output */])(),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* EventEmitter */])
+    ], TableauFeedComponent.prototype, "toggle", void 0);
+    TableauFeedComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-tableaufeed-component',
+            template: __webpack_require__("./src/app/modules/analytics/v1/components/feed/tableaufeed.component.html"),
+            styles: [__webpack_require__("./src/app/modules/analytics/v1/components/feed/tableaufeed.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], TableauFeedComponent);
+    return TableauFeedComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/modules/analytics/v1/components/filterHeader/tableauFilterHeader.component.html":
 /***/ (function(module, exports) {
 
@@ -2536,6 +2601,137 @@ var TableauFilterComponent = (function () {
         __metadata("design:paramtypes", [])
     ], TableauFilterComponent);
     return TableauFilterComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/modules/analytics/v1/components/footer/tableauFooter.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <ul class=\"nav navbar-nav\" style='margin: 0 auto;'>\r\n      <li class='nav-help1'>\r\n        <a class='btn' style=\"cursor: pointer\">\r\n          <i (click)='newfeed()' class=\"glyphicon glyphicon-circle-arrow-down\" style=\"cursor: pointer\"></i>\r\n          <br />\r\n          <span>FEED</span>\r\n        </a>\r\n      </li>\r\n      <li class='nav-help1'>\r\n        <a class='btn' style=\"cursor: pointer\">\r\n          <i (click)='newinbox()' class=\"glyphicon glyphicon-envelope\" style=\"cursor: pointer\"></i>\r\n          <br />\r\n          <span>INBOX</span>\r\n        </a>\r\n      </li>\r\n\r\n      <li class='nav-help1'>\r\n        <a class='btn' [search]=\"search\">\r\n          <i (click)='newsearch()' class=\"glyphicon glyphicon-search\"></i>\r\n          <br />\r\n          <span>SEARCH</span>\r\n        </a>\r\n      </li>\r\n      <li class='nav-help1'>\r\n        <a class='btn' [alert]=\"alert\">\r\n          <i (click)='newalert()' class=\"glyphicon glyphicon-bell\"></i>\r\n          <br />\r\n          <span>ALERT</span>\r\n        </a>\r\n      </li>\r\n      <li class='nav-help1'>\r\n        <a class='btn' [insight]=\"insight\">\r\n          <i (click)='newinsight()' class=\"glyphicon glyphicon-dashboard\"></i>\r\n          <br />\r\n          <span>INSIGHTS</span>\r\n        </a>\r\n      </li>\r\n\r\n      <!-- <li class='nav-help1'><a class=\"nav-link\" routerLink=\"feed\"><i class=\"glyphicon glyphicon-envelope\"></i><br /><span>INBOX</span></a></li>\r\n      <li class='nav-help1'><a class=\"nav-link\" routerLink=\"feed\"><i class=\"glyphicon glyphicon-search\"></i><br /><span>SEARCH</span></a></li>\r\n      <li class='nav-help1'><a class=\"nav-link\" routerLink=\"feed\"><i class=\"glyphicon glyphicon-bell\"></i><br /><span>ALERT</span></a></li>\r\n      <li class='nav-help1'><a class=\"nav-link\" routerLink=\"feed\"><i class=\"glyphicon glyphicon-dashboard\"></i><br /><span>INSIGHTS</span></a></li> -->\r\n    </ul>\r\n  </div>\r\n</nav>"
+
+/***/ }),
+
+/***/ "./src/app/modules/analytics/v1/components/footer/tableauFooter.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ".container-fluid {\n  text-align: center; }\n\n.navbar-nav {\n  display: inline-block;\n  float: none; }\n\n.navbar-nav li {\n    margin-left: 1px;\n    margin-right: 3px; }\n\n.navbar-nav i {\n    font-size: 1.9em; }\n\n.navbar-nav span {\n    font-size: .65em; }\n\n@media (max-width: 450px) {\n  li {\n    float: left; } }\n\n.navbar-default {\n  background-color: #FFF; }\n\n@media (pointer: fine) {\n  a span {\n    display: none; }\n  a:hover span {\n    display: inline-block; } }\n"
+
+/***/ }),
+
+/***/ "./src/app/modules/analytics/v1/components/footer/tableauFooter.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TableauFooterComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var TableauFooterComponent = (function () {
+    function TableauFooterComponent(router) {
+        //this.visualization= new vizObject('https://public.tableau.com/views/USMassShooting2013-2015TrendsPerState/Story1?:embed=y','1')
+        this.router = router;
+        this.tableaufeed = false;
+        this.tableauInbox = false;
+        this.tableausearch = false;
+        this.tableaualert = false;
+        this.tableauinsight = false;
+    }
+    TableauFooterComponent.prototype.ngOnInit = function () {
+    };
+    TableauFooterComponent.prototype.newfeed = function () {
+        //this.router.navigateByUrl('/login');
+        this.tableaufeed = true;
+        this.tableauInbox = false;
+        this.tableausearch = false;
+        this.tableaualert = false;
+        this.tableauinsight = false;
+        //this.router.navigate(['/tableaufeed',this.visIndex,this.visUrl,this.vizIndex]);
+        //this.router.navigate(['/', 'tableaufeed'],{ queryParams: { parval1: this.visIndex,parval2: this.visUrl ,parval3: this.vizIndex  }, skipLocationChange: true });
+        //window.history.pushState('','','register');
+        this.router.navigate(['tableaufeed']);
+        //this.router.navigate(['/tableaufeed',this.visIndex,this.visUrl,this.vizIndex]);
+    };
+    TableauFooterComponent.prototype.newinbox = function () {
+        this.tableauInbox = true;
+        this.tableaufeed = false;
+        this.tableausearch = false;
+        this.tableaualert = false;
+        this.tableauinsight = false;
+        this.router.navigate(['tableauInbox']);
+    };
+    TableauFooterComponent.prototype.newalert = function () {
+        //this.router.navigateByUrl('/login');
+        this.tableaualert = true;
+        this.tableauInbox = false;
+        this.tableausearch = false;
+        this.tableaufeed = false;
+        this.tableauinsight = false;
+        this.router.navigate(['tableaualert']);
+    };
+    TableauFooterComponent.prototype.newsearch = function () {
+        //this.router.navigateByUrl('/login');
+        this.tableaualert = true;
+        this.tableauInbox = false;
+        this.tableausearch = false;
+        this.tableaufeed = false;
+        this.tableauinsight = false;
+        this.router.navigate(['tableausearch']);
+    };
+    TableauFooterComponent.prototype.newinsight = function () {
+        //this.router.navigateByUrl('/login');
+        this.tableaualert = true;
+        this.tableauInbox = false;
+        this.tableausearch = false;
+        this.tableaufeed = false;
+        this.tableauinsight = false;
+        this.router.navigate(['tableauinsight']);
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
+        __metadata("design:type", Boolean)
+    ], TableauFooterComponent.prototype, "tableaufeed", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
+        __metadata("design:type", Boolean)
+    ], TableauFooterComponent.prototype, "tableauInbox", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
+        __metadata("design:type", Boolean)
+    ], TableauFooterComponent.prototype, "tableausearch", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
+        __metadata("design:type", Boolean)
+    ], TableauFooterComponent.prototype, "tableaualert", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
+        __metadata("design:type", Boolean)
+    ], TableauFooterComponent.prototype, "tableauinsight", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
+        __metadata("design:type", Object)
+    ], TableauFooterComponent.prototype, "visualization", void 0);
+    TableauFooterComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-tableau-footer-component',
+            template: __webpack_require__("./src/app/modules/analytics/v1/components/footer/tableauFooter.component.html"),
+            styles: [__webpack_require__("./src/app/modules/analytics/v1/components/footer/tableauFooter.component.scss")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]])
+    ], TableauFooterComponent);
+    return TableauFooterComponent;
 }());
 
 
@@ -2670,7 +2866,7 @@ var TableauInsightComponent = (function () {
 /***/ "./src/app/modules/analytics/v1/components/search/tableausearch.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <div class=\"container\" style=\"max-width:700px;margin-left:0px;margin-top:10px;margin-right:10px;\"> -->\r\n<div class=\"container\" style=\"max-width:750px;margin-bottom: 79px;margin-top:65px;margin-bottom:10px; \">\r\n    <div class=\"row\" style='margin-left: 10px; margin-top:10px; margin-right:10px'>\r\n        \r\n        <input class=\"form-control\" type=\"text\" placeholder=\"Search\" aria-label=\"Search\"\r\n            style=\"max-width:100%;margin-left:-15px;margin-bottom:10px;\">\r\n       \r\n    </div>\r\n    \r\n    <div class=\"row\" style='margin-top:1px;margin-left: 10px; margin-right:10px;margin-bottom:10px;'>\r\n        <div style=\"width:100%; background-color: grey;margin-left:-15px;\">\r\n            <div style=\"text-align:center;\">\r\n                <button type=\"button\" class=\"btn btn-success\"\r\n                    style=\"width: 19%; float:left; margin: 1%;height:24px; background-color:#FFF;border-color: black;color:black;text-align:center;\"><span\r\n                        class=\"font-weight-bold \"\r\n                        style=\"font-style: normal;font-size: 8pt;margin-left:0px;text-align:center;\">TODAY</span></button>\r\n            </div>\r\n            <div>\r\n                <button type=\"button\" class=\"btn btn-success\"\r\n                    style=\"width: 19%; float:left; margin: 1%;height:24px; background-color:#FFF;border-color: black;color:black;text-align:center;\"><span\r\n                        class=\"font-weight-bold \"\r\n                        style=\"font-style: normal;font-size: 8pt;text-align:center;\">WEEK</span></button>\r\n            </div>\r\n            <div>\r\n                <button type=\"button\" class=\"btn btn-success\"\r\n                    style=\"width: 23%; float:left; margin: 1%;height:24px; background-color:#FFF;border-color: black;color:black;text-align:center;\"><span\r\n                        class=\"font-weight-bold \"\r\n                        style=\"font-style: normal;font-size: 8pt;text-align:center;\">MONTH</span></button>\r\n            </div>\r\n            <div>\r\n                <button type=\"button\" class=\"btn btn-success\"\r\n                    style=\"width: 31%; float:left; margin: 1%;height:24px; background-color:#FFF;border-color: black;color:black;text-align:center;\"><span\r\n                        class=\"font-weight-bold \" style=\"font-style: normal;font-size: 8pt;text-align:center;\">FILTER\r\n                        TAGS</span></button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n\r\n    <!-- <div class=\"row\" style='margin-left: 10px; margin-right:10px'>\r\n        <app-tableaufeed-component>\r\n        </app-tableaufeed-component>\r\n    </div>\r\n    <div class=\"row\" style='margin-left: 10px; margin-right:10px'>\r\n        <app-tableaufeed-component>\r\n        </app-tableaufeed-component>\r\n    </div>\r\n    <div class=\"row\" style='margin-left: 10px; margin-right:10px'>\r\n        <app-tableaufeed-component>\r\n        </app-tableaufeed-component>\r\n    </div>\r\n    <div class=\"row\" style='margin-left: 10px; margin-right:10px'>\r\n            <app-tableaufeed-component>\r\n            </app-tableaufeed-component>\r\n    </div>\r\n    <div class=\"row\" style='margin-left: 10px; margin-right:10px'>\r\n            <app-tableaufeed-component>\r\n            </app-tableaufeed-component>\r\n    </div>\r\n    <div class=\"row\" style='margin-left: 10px; margin-right:10px'>\r\n            <app-tableaufeed-component>\r\n            </app-tableaufeed-component>\r\n    </div> -->\r\n</div>"
+module.exports = "<!-- <div class=\"container\" style=\"max-width:700px;margin-left:0px;margin-top:10px;margin-right:10px;\"> -->\r\n<div class=\"container\" style=\"max-width:750px;margin-bottom: 79px;margin-top:65px;margin-bottom:10px; \">\r\n    <div class=\"row\" style='margin-left: 25px; margin-top:10px; margin-right:10px'>\r\n        \r\n        <input class=\"form-control\" type=\"text\" placeholder=\"Search\" aria-label=\"Search\"\r\n            style=\"max-width:100%;margin-left:-15px;margin-bottom:10px;\">\r\n       \r\n    </div>\r\n    \r\n    <div class=\"row\" style='margin-top:1px;margin-left: 27px; margin-right:10px;margin-bottom:5px;'>\r\n        <div style=\"width:100%; background-color: grey;margin-left:-15px;\">\r\n            <div style=\"text-align:center;\">\r\n                <button type=\"button\" class=\"btn btn-success\"\r\n                    style=\"width: 19%; float:left; margin: 1%;height:24px; background-color:#FFF;border-color: black;color:black;text-align:center;\"><span\r\n                        class=\"font-weight-bold \"\r\n                        style=\"font-style: normal;font-size: 8pt;margin-left:0px;text-align:center;\">TODAY</span></button>\r\n            </div>\r\n            <div>\r\n                <button type=\"button\" class=\"btn btn-success\"\r\n                    style=\"width: 19%; float:left; margin: 1%;height:24px; background-color:#FFF;border-color: black;color:black;text-align:center;\"><span\r\n                        class=\"font-weight-bold \"\r\n                        style=\"font-style: normal;font-size: 8pt;text-align:center;\">WEEK</span></button>\r\n            </div>\r\n            <div>\r\n                <button type=\"button\" class=\"btn btn-success\"\r\n                    style=\"width: 23%; float:left; margin: 1%;height:24px; background-color:#FFF;border-color: black;color:black;text-align:center;\"><span\r\n                        class=\"font-weight-bold \"\r\n                        style=\"font-style: normal;font-size: 8pt;text-align:center;\">MONTH</span></button>\r\n            </div>\r\n            <div>\r\n                <button type=\"button\" class=\"btn btn-success\"\r\n                    style=\"width: 31%; float:left; margin: 1%;height:24px; background-color:#FFF;border-color: black;color:black;text-align:center;\"><span\r\n                        class=\"font-weight-bold \" style=\"font-style: normal;font-size: 8pt;text-align:center;\">FILTER\r\n                        TAGS</span></button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n\r\n    <!-- <div class=\"row\" style='margin-left: 10px; margin-right:10px'>\r\n        <app-tableaufeed-component>\r\n        </app-tableaufeed-component>\r\n    </div>\r\n    <div class=\"row\" style='margin-left: 10px; margin-right:10px'>\r\n        <app-tableaufeed-component>\r\n        </app-tableaufeed-component>\r\n    </div>\r\n    <div class=\"row\" style='margin-left: 10px; margin-right:10px'>\r\n        <app-tableaufeed-component>\r\n        </app-tableaufeed-component>\r\n    </div>\r\n    <div class=\"row\" style='margin-left: 10px; margin-right:10px'>\r\n            <app-tableaufeed-component>\r\n            </app-tableaufeed-component>\r\n    </div>\r\n    <div class=\"row\" style='margin-left: 10px; margin-right:10px'>\r\n            <app-tableaufeed-component>\r\n            </app-tableaufeed-component>\r\n    </div>\r\n    <div class=\"row\" style='margin-left: 10px; margin-right:10px'>\r\n            <app-tableaufeed-component>\r\n            </app-tableaufeed-component>\r\n    </div> -->\r\n</div>"
 
 /***/ }),
 
@@ -2793,6 +2989,8 @@ var TableauViewComponent = (function () {
                 console.log("Embedded analytics is loading...");
             }
         };
+        //let ticket ="ydJ4ATf-Qm6fbSbwAmDsJg==:QBAmKi9CQ337keZd98uL0wlo";
+        //this.vizUrl="https://sl73ebcapq062:8443/mobileapp/embeddedAnalytics/trusted/" + ticket + "/t/EMR/views/SampleMerchantAggregatedAccountInsights20170822/Title?:embed=n&:linktarget=_parent&:embed=y&:showVizHome=n&:apiID=host0"
         new tableau.Viz(document.getElementById(this.visIndex), this.vizUrl, optionsOne);
     };
     TableauViewComponent.prototype.getQueryParameter = function (key) {
@@ -3173,7 +3371,7 @@ var MainComponent = (function () {
     MainComponent.prototype.ngOnInit = function () {
         this.visualizations = [
             new vizItem('https://public.tableau.com/views/10_0InternationalTourism/InternationalTourism?:embed=y&:tooltip=n&:toolbar=n&:showVizHome=no', '2'),
-            new vizItem('https://public.tableau.com/views/USMassShooting2013-2015TrendsPerState/Story1?:embed=y', '1')
+            new vizItem('https://public.tableau.com/views/10_0InternationalTourism/InternationalTourism?:embed=y&:tooltip=n&:toolbar=n&:showVizHome=no', '1')
         ];
     };
     __decorate([
@@ -3205,202 +3403,6 @@ var MainComponent = (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]])
     ], MainComponent);
     return MainComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/modules/analytics/v1/main/tableauFooter.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <ul class=\"nav navbar-nav\" style='margin: 0 auto;'>\r\n      <li class='nav-help1'>\r\n        <a class='btn' style=\"cursor: pointer\">\r\n          <i (click)='newfeed()' class=\"glyphicon glyphicon-circle-arrow-down\" style=\"cursor: pointer\"></i>\r\n          <br />\r\n          <span>FEED</span>\r\n        </a>\r\n      </li>\r\n      <li class='nav-help1'>\r\n        <a class='btn' style=\"cursor: pointer\">\r\n          <i (click)='newinbox()' class=\"glyphicon glyphicon-envelope\" style=\"cursor: pointer\"></i>\r\n          <br />\r\n          <span>INBOX</span>\r\n        </a>\r\n      </li>\r\n\r\n      <li class='nav-help1'>\r\n        <a class='btn' [search]=\"search\">\r\n          <i (click)='newsearch()' class=\"glyphicon glyphicon-search\"></i>\r\n          <br />\r\n          <span>SEARCH</span>\r\n        </a>\r\n      </li>\r\n      <li class='nav-help1'>\r\n        <a class='btn' [alert]=\"alert\">\r\n          <i (click)='newalert()' class=\"glyphicon glyphicon-bell\"></i>\r\n          <br />\r\n          <span>ALERT</span>\r\n        </a>\r\n      </li>\r\n      <li class='nav-help1'>\r\n        <a class='btn' [insight]=\"insight\">\r\n          <i (click)='newinsight()' class=\"glyphicon glyphicon-dashboard\"></i>\r\n          <br />\r\n          <span>INSIGHTS</span>\r\n        </a>\r\n      </li>\r\n\r\n      <!-- <li class='nav-help1'><a class=\"nav-link\" routerLink=\"feed\"><i class=\"glyphicon glyphicon-envelope\"></i><br /><span>INBOX</span></a></li>\r\n      <li class='nav-help1'><a class=\"nav-link\" routerLink=\"feed\"><i class=\"glyphicon glyphicon-search\"></i><br /><span>SEARCH</span></a></li>\r\n      <li class='nav-help1'><a class=\"nav-link\" routerLink=\"feed\"><i class=\"glyphicon glyphicon-bell\"></i><br /><span>ALERT</span></a></li>\r\n      <li class='nav-help1'><a class=\"nav-link\" routerLink=\"feed\"><i class=\"glyphicon glyphicon-dashboard\"></i><br /><span>INSIGHTS</span></a></li> -->\r\n    </ul>\r\n  </div>\r\n</nav>"
-
-/***/ }),
-
-/***/ "./src/app/modules/analytics/v1/main/tableauFooter.component.scss":
-/***/ (function(module, exports) {
-
-module.exports = ".container-fluid {\n  text-align: center; }\n\n.navbar-nav {\n  display: inline-block;\n  float: none; }\n\n.navbar-nav li {\n    margin-left: 1px;\n    margin-right: 3px; }\n\n.navbar-nav i {\n    font-size: 1.9em; }\n\n.navbar-nav span {\n    font-size: .65em; }\n\n@media (max-width: 450px) {\n  li {\n    float: left; } }\n\n.navbar-default {\n  background-color: #FFF; }\n\n@media (pointer: fine) {\n  a span {\n    display: none; }\n  a:hover span {\n    display: inline-block; } }\n"
-
-/***/ }),
-
-/***/ "./src/app/modules/analytics/v1/main/tableauFooter.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TableauFooterComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var TableauFooterComponent = (function () {
-    function TableauFooterComponent(router) {
-        //this.visualization= new vizObject('https://public.tableau.com/views/USMassShooting2013-2015TrendsPerState/Story1?:embed=y','1')
-        this.router = router;
-        this.tableaufeed = false;
-        this.tableauInbox = false;
-        this.tableausearch = false;
-        this.tableaualert = false;
-        this.tableauinsight = false;
-    }
-    TableauFooterComponent.prototype.ngOnInit = function () {
-    };
-    TableauFooterComponent.prototype.newfeed = function () {
-        //this.router.navigateByUrl('/login');
-        this.tableaufeed = true;
-        this.tableauInbox = false;
-        this.tableausearch = false;
-        this.tableaualert = false;
-        this.tableauinsight = false;
-        //this.router.navigate(['/tableaufeed',this.visIndex,this.visUrl,this.vizIndex]);
-        //this.router.navigate(['/', 'tableaufeed'],{ queryParams: { parval1: this.visIndex,parval2: this.visUrl ,parval3: this.vizIndex  }, skipLocationChange: true });
-        //window.history.pushState('','','register');
-        this.router.navigate(['tableaufeed']);
-        //this.router.navigate(['/tableaufeed',this.visIndex,this.visUrl,this.vizIndex]);
-    };
-    TableauFooterComponent.prototype.newinbox = function () {
-        this.tableauInbox = true;
-        this.tableaufeed = false;
-        this.tableausearch = false;
-        this.tableaualert = false;
-        this.tableauinsight = false;
-        this.router.navigate(['tableauInbox']);
-    };
-    TableauFooterComponent.prototype.newalert = function () {
-        //this.router.navigateByUrl('/login');
-        this.tableaualert = true;
-        this.tableauInbox = false;
-        this.tableausearch = false;
-        this.tableaufeed = false;
-        this.tableauinsight = false;
-        this.router.navigate(['tableaualert']);
-    };
-    TableauFooterComponent.prototype.newsearch = function () {
-        //this.router.navigateByUrl('/login');
-        this.tableaualert = true;
-        this.tableauInbox = false;
-        this.tableausearch = false;
-        this.tableaufeed = false;
-        this.tableauinsight = false;
-        this.router.navigate(['tableausearch']);
-    };
-    TableauFooterComponent.prototype.newinsight = function () {
-        //this.router.navigateByUrl('/login');
-        this.tableaualert = true;
-        this.tableauInbox = false;
-        this.tableausearch = false;
-        this.tableaufeed = false;
-        this.tableauinsight = false;
-        this.router.navigate(['tableauinsight']);
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
-        __metadata("design:type", Boolean)
-    ], TableauFooterComponent.prototype, "tableaufeed", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
-        __metadata("design:type", Boolean)
-    ], TableauFooterComponent.prototype, "tableauInbox", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
-        __metadata("design:type", Boolean)
-    ], TableauFooterComponent.prototype, "tableausearch", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
-        __metadata("design:type", Boolean)
-    ], TableauFooterComponent.prototype, "tableaualert", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
-        __metadata("design:type", Boolean)
-    ], TableauFooterComponent.prototype, "tableauinsight", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
-        __metadata("design:type", Object)
-    ], TableauFooterComponent.prototype, "visualization", void 0);
-    TableauFooterComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'app-tableau-footer-component',
-            template: __webpack_require__("./src/app/modules/analytics/v1/main/tableauFooter.component.html"),
-            styles: [__webpack_require__("./src/app/modules/analytics/v1/main/tableauFooter.component.scss")]
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]])
-    ], TableauFooterComponent);
-    return TableauFooterComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/modules/analytics/v1/main/tableaufeed.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<!-- <div class=\"container\" style=\"max-width:700px;margin-left:0px;margin-top:10px;margin-right:10px;\"> -->\r\n<!-- <div class=\"row\" style='margin-left: 1px; margin-right:10px'>    \r\n    <input class=\"form-control\" type=\"text\" placeholder=\"Search\" aria-label=\"Search\" style=\"margin-left:-15px;margin-bottom:10px;\">\r\n  </div>\r\n <div class=\"row\" style='margin-top:1px;margin-left: 0px; margin-right:10px;margin-bottom:10px;'>\r\n    <div style=\"width:100%; background-color: grey;margin-left:-15px;\">\r\n    <div style=\"text-align:center;\">\r\n        <button type=\"button\" class=\"btn btn-success\" style=\"width: 18%; float:left; margin: 1%;height:24px; background-color:#FFF;border-color: black;color:black;text-align:center;\"><span class=\"font-weight-bold \" style=\"font-style: normal;font-size: 6pt;margin-left:0px;text-align:center;\">TODAY</span></button>\r\n    </div>\r\n    <div >\r\n        <button type=\"button\" class=\"btn btn-success\" style=\"width: 20%; float:left; margin: 1%;height:24px; background-color:#FFF;border-color: black;color:black;text-align:center;\"><span class=\"font-weight-bold \" style=\"font-style: normal;font-size: 6pt;text-align:center;\">WEEK</span></button>\r\n    </div>\r\n    <div >\r\n        <button type=\"button\" class=\"btn btn-success\" style=\"width: 23%; float:left; margin: 1%;height:24px; background-color:#FFF;border-color: black;color:black;text-align:center;\"><span class=\"font-weight-bold \" style=\"font-style: normal;font-size: 6pt;text-align:center;\">MONTH</span></button>\r\n    </div>\r\n    <div >\r\n        <button type=\"button\" class=\"btn btn-success\" style=\"width: 30%; float:left; margin: 1%;height:24px; background-color:#FFF;border-color: black;color:black;text-align:center;\"><span class=\"font-weight-bold \" style=\"font-style: normal;font-size: 6pt;text-align:center;\">FILTER TAGS</span></button>\r\n    </div>\r\n    </div>\r\n  </div>  -->\r\n<div class=\"row panel panel-default\">\r\n    <div *ngIf=\"title==1\">\r\n        <div class=\"row\" style='margin-left: 1px;margin-top:5px;'>\r\n            <span style=\"margin-left:10px; text-align:left;font-style: normal;font-size: 6pt;color:#aaaa\"></span>\r\n            ALERT\r\n        </div>\r\n    </div>\r\n    <div *ngIf=\"title==2\">\r\n        <div class=\"row\" style='margin-left: 1px;margin-top:5px;'>\r\n            <span style=\"margin-left:10px; text-align:left;font-style: normal;font-size: 6pt;color:#aaaa\"></span>\r\n            REVENUE\r\n        </div>\r\n    </div>\r\n    <div *ngIf=\"title==3\">\r\n        <div class=\"row\" style='margin-left: 1px;margin-top:5px;'>\r\n            <span style=\"margin-left:10px; text-align:left;font-style: normal;font-size: 6pt;color:#aaaa\"></span>\r\n            PIPELINE\r\n        </div>\r\n    </div>\r\n    <div class=\"col-xs-2\" style=\"margin-top:20px;\">\r\n        <button type=\"button\" class=\"btn btn-success\" style=\"width: 50px;background-color: black; float:left; margin: 1%;height:20px;border-color: black;color:white;text-align:center;\">\r\n            <span class=\"font-weight-bold \" style=\"font-style: normal;font-size: 6pt;margin-left:0px;text-align:center;\">New</span>\r\n        </button>\r\n\r\n    </div>\r\n    <div class=\"col-xs-10\">\r\n        <p *ngIf=\"title==1\"class=\"thick\" style=\"margin-left:10px; text-align:left;font-style: bold;font-size: 10pt;margin-top:0px;\">\r\n               \r\n            Title Port Vitor Blandit\r\n            <span style=\"margin-right:10px;float:right; font-style: normal;font-size: 8pt;color:#aaaa\">3:04 pm </span>\r\n        </p>\r\n        <p *ngIf=\"title==2\"class=\"thick\" style=\"margin-left:10px; text-align:left;font-style: bold;font-size: 10pt;margin-top:0px;\">\r\n               \r\n                Title Nam Porttitor\r\n                <span style=\"margin-right:10px;float:right; font-style: normal;font-size: 8pt;color:#aaaa\">3:30 pm </span>\r\n            </p>\r\n            <p *ngIf=\"title==3\"class=\"thick\" style=\"margin-left:10px; text-align:left;font-style: bold;font-size: 10pt;margin-top:0px;\">\r\n               \r\n                    Title Vehicula Dolor\r\n                    <span style=\"margin-right:10px;float:right; font-style: normal;font-size: 8pt;color:#aaaa\">08 Feb 10:04 pm </span>\r\n                </p>\r\n        <p style=\"margin-left:10px;margin-top:-20px; text-align:left;font-style: normal;font-size: 8pt;color:#aaaa\">\r\n            @julesbrighton\r\n        </p>\r\n        <p style=\"margin-left:10px;margin-top:-20px; text-align:left;font-style: normal;font-size: 8pt;color:#aaaa\">\r\n            Curabiter lobortis id lorem id bibendum. Ut id consectetur magna.\r\n        </p>\r\n    </div>\r\n</div>\r\n<!-- </div>  -->"
-
-/***/ }),
-
-/***/ "./src/app/modules/analytics/v1/main/tableaufeed.component.scss":
-/***/ (function(module, exports) {
-
-module.exports = "/*Body Styling */\nh1 {\n  margin-top: 80px;\n  font-weight: bold; }\np {\n  margin-top: 25px;\n  margin-bottom: 25px; }\n.btn {\n  margin-left: 10px;\n  margin-right: 10px; }\n/* Boostrap Buttons Styling */\n.btn-default {\n  font-family: Raleway-SemiBold;\n  font-size: 13px;\n  color: rgba(108, 88, 179, 0.75);\n  letter-spacing: 1px;\n  line-height: 15px;\n  border: 2px solid rgba(108, 89, 179, 0.75);\n  border-radius: 40px;\n  background: transparent;\n  -webkit-transition: all 0.3s ease 0s;\n  transition: all 0.3s ease 0s; }\n.btn-default:hover {\n  color: #FFF;\n  background: rgba(108, 88, 179, 0.75);\n  border: 2px solid rgba(108, 89, 179, 0.75); }\n.btn-primary {\n  font-family: Raleway-SemiBold;\n  font-size: 13px;\n  color: rgba(58, 133, 191, 0.75);\n  letter-spacing: 1px;\n  line-height: 15px;\n  border: 2px solid rgba(58, 133, 191, 0.75);\n  border-radius: 40px;\n  background: transparent;\n  -webkit-transition: all 0.3s ease 0s;\n  transition: all 0.3s ease 0s; }\n.btn-primary:hover {\n  color: #FFF;\n  background: rgba(58, 133, 191, 0.75);\n  border: 2px solid rgba(58, 133, 191, 0.75); }\n.btn-success {\n  font-family: Raleway-SemiBold;\n  font-size: 10px;\n  color: rgba(103, 192, 103, 0.75);\n  letter-spacing: 1px;\n  line-height: 12px;\n  border: 1px solid rgba(103, 192, 103, 0.75);\n  border-radius: 40px;\n  background: transparent;\n  -webkit-transition: all 0.3s ease 0s;\n  transition: all 0.3s ease 0s;\n  float: left; }\n.btn-success:hover {\n  color: #FFF;\n  background: rgba(103, 192, 103, 0.75);\n  border: 2px solid rgba(103, 192, 103, 0.75); }\n.btn-info {\n  font-family: Raleway-SemiBold;\n  font-size: 13px;\n  color: rgba(91, 192, 222, 0.75);\n  letter-spacing: 1px;\n  line-height: 15px;\n  border: 2px solid rgba(91, 192, 222, 0.75);\n  border-radius: 40px;\n  background: transparent;\n  -webkit-transition: all 0.3s ease 0s;\n  transition: all 0.3s ease 0s; }\n.btn-info:hover {\n  color: #FFF;\n  background: rgba(91, 192, 222, 0.75);\n  border: 2px solid rgba(91, 192, 222, 0.75); }\n.btn-warning {\n  font-family: Raleway-SemiBold;\n  font-size: 13px;\n  color: rgba(240, 173, 78, 0.75);\n  letter-spacing: 1px;\n  line-height: 15px;\n  border: 2px solid rgba(240, 173, 78, 0.75);\n  border-radius: 40px;\n  background: transparent;\n  -webkit-transition: all 0.3s ease 0s;\n  transition: all 0.3s ease 0s; }\n.btn-warning:hover {\n  color: #FFF;\n  background: rgba(240, 173, 78, 0.75);\n  border: 2px solid rgba(240, 173, 78, 0.75); }\n.btn-danger {\n  font-family: Raleway-SemiBold;\n  font-size: 13px;\n  color: rgba(217, 83, 78, 0.75);\n  letter-spacing: 1px;\n  line-height: 15px;\n  border: 2px solid rgba(217, 83, 78, 0.75);\n  border-radius: 40px;\n  background: transparent;\n  -webkit-transition: all 0.3s ease 0s;\n  transition: all 0.3s ease 0s; }\n.btn-danger:hover {\n  color: #FFF;\n  background: rgba(217, 83, 78, 0.75);\n  border: 2px solid rgba(217, 83, 78, 0.75); }\np.thick {\n  font-weight: bold; }\n"
-
-/***/ }),
-
-/***/ "./src/app/modules/analytics/v1/main/tableaufeed.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TableauFeedComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var TableauFeedComponent = (function () {
-    function TableauFeedComponent() {
-        this.opened = false;
-        this.toggle = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* EventEmitter */]();
-        console.log("rouyting");
-    }
-    TableauFeedComponent.prototype.ngOnInit = function () {
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
-        __metadata("design:type", Object)
-    ], TableauFeedComponent.prototype, "opened", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
-        __metadata("design:type", String)
-    ], TableauFeedComponent.prototype, "title", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Output */])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* EventEmitter */])
-    ], TableauFeedComponent.prototype, "toggle", void 0);
-    TableauFeedComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'app-tableaufeed-component',
-            template: __webpack_require__("./src/app/modules/analytics/v1/main/tableaufeed.component.html"),
-            styles: [__webpack_require__("./src/app/modules/analytics/v1/main/tableaufeed.component.scss")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], TableauFeedComponent);
-    return TableauFeedComponent;
 }());
 
 
@@ -3463,10 +3465,10 @@ var DataService = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_visa_checkout_v1_visa_checkout_component__ = __webpack_require__("./src/app/components/visa-checkout/v1/visa-checkout.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__directives_autofocus_directive__ = __webpack_require__("./src/app/directives/autofocus.directive.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__modules_analytics_v1_components_tableau_tableauView_component__ = __webpack_require__("./src/app/modules/analytics/v1/components/tableau/tableauView.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__modules_analytics_v1_main_tableauFooter_component__ = __webpack_require__("./src/app/modules/analytics/v1/main/tableauFooter.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__modules_analytics_v1_components_footer_tableauFooter_component__ = __webpack_require__("./src/app/modules/analytics/v1/components/footer/tableauFooter.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__modules_analytics_v1_components_tableauComments_tableauComments_component__ = __webpack_require__("./src/app/modules/analytics/v1/components/tableauComments/tableauComments.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__modules_analytics_v1_components_tableauCommentsTwo_tableauCommentsTwo_component__ = __webpack_require__("./src/app/modules/analytics/v1/components/tableauCommentsTwo/tableauCommentsTwo.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__modules_analytics_v1_main_tableaufeed_component__ = __webpack_require__("./src/app/modules/analytics/v1/main/tableaufeed.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__modules_analytics_v1_components_feed_tableaufeed_component__ = __webpack_require__("./src/app/modules/analytics/v1/components/feed/tableaufeed.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__modules_analytics_v1_components_search_tableausearch_component__ = __webpack_require__("./src/app/modules/analytics/v1/components/search/tableausearch.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__modules_analytics_v1_components_tableauInbox_tableauInbox_component__ = __webpack_require__("./src/app/modules/analytics/v1/components/tableauInbox/tableauInbox.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__modules_analytics_v1_components_filters_tableaufilter_component__ = __webpack_require__("./src/app/modules/analytics/v1/components/filters/tableaufilter.component.ts");
@@ -3527,11 +3529,11 @@ var SharedComponentModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_9__components_visa_checkout_v1_visa_checkout_component__["a" /* VisaCheckoutComponent */],
                 __WEBPACK_IMPORTED_MODULE_10__directives_autofocus_directive__["a" /* AutoFocusDirective */],
                 __WEBPACK_IMPORTED_MODULE_11__modules_analytics_v1_components_tableau_tableauView_component__["a" /* TableauViewComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__modules_analytics_v1_main_tableauFooter_component__["a" /* TableauFooterComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__modules_analytics_v1_components_footer_tableauFooter_component__["a" /* TableauFooterComponent */],
                 __WEBPACK_IMPORTED_MODULE_13__modules_analytics_v1_components_tableauComments_tableauComments_component__["a" /* TableauCommentsComponent */],
                 __WEBPACK_IMPORTED_MODULE_14__modules_analytics_v1_components_tableauCommentsTwo_tableauCommentsTwo_component__["a" /* TableauCommentsTwoComponent */],
                 __WEBPACK_IMPORTED_MODULE_17__modules_analytics_v1_components_tableauInbox_tableauInbox_component__["a" /* TableauInboxComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__modules_analytics_v1_main_tableaufeed_component__["a" /* TableauFeedComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__modules_analytics_v1_components_feed_tableaufeed_component__["a" /* TableauFeedComponent */],
                 __WEBPACK_IMPORTED_MODULE_16__modules_analytics_v1_components_search_tableausearch_component__["a" /* TableauSearchComponent */],
                 __WEBPACK_IMPORTED_MODULE_18__modules_analytics_v1_components_filters_tableaufilter_component__["a" /* TableauFilterComponent */],
                 __WEBPACK_IMPORTED_MODULE_19__modules_analytics_v1_components_header_tableauHeader_component__["a" /* TableauHeaderComponent */],
@@ -3553,11 +3555,11 @@ var SharedComponentModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_9__components_visa_checkout_v1_visa_checkout_component__["a" /* VisaCheckoutComponent */],
                 __WEBPACK_IMPORTED_MODULE_10__directives_autofocus_directive__["a" /* AutoFocusDirective */],
                 __WEBPACK_IMPORTED_MODULE_11__modules_analytics_v1_components_tableau_tableauView_component__["a" /* TableauViewComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__modules_analytics_v1_main_tableauFooter_component__["a" /* TableauFooterComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__modules_analytics_v1_components_footer_tableauFooter_component__["a" /* TableauFooterComponent */],
                 __WEBPACK_IMPORTED_MODULE_13__modules_analytics_v1_components_tableauComments_tableauComments_component__["a" /* TableauCommentsComponent */],
                 __WEBPACK_IMPORTED_MODULE_14__modules_analytics_v1_components_tableauCommentsTwo_tableauCommentsTwo_component__["a" /* TableauCommentsTwoComponent */],
                 __WEBPACK_IMPORTED_MODULE_17__modules_analytics_v1_components_tableauInbox_tableauInbox_component__["a" /* TableauInboxComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__modules_analytics_v1_main_tableaufeed_component__["a" /* TableauFeedComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__modules_analytics_v1_components_feed_tableaufeed_component__["a" /* TableauFeedComponent */],
                 __WEBPACK_IMPORTED_MODULE_16__modules_analytics_v1_components_search_tableausearch_component__["a" /* TableauSearchComponent */],
                 __WEBPACK_IMPORTED_MODULE_18__modules_analytics_v1_components_filters_tableaufilter_component__["a" /* TableauFilterComponent */],
                 __WEBPACK_IMPORTED_MODULE_19__modules_analytics_v1_components_header_tableauHeader_component__["a" /* TableauHeaderComponent */],
