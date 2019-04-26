@@ -2617,7 +2617,7 @@ module.exports = "<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n 
 /***/ "./src/app/modules/analytics/v1/components/footer/tableauFooter.component.scss":
 /***/ (function(module, exports) {
 
-module.exports = ".container-fluid {\n  text-align: center; }\n\n.navbar-nav {\n  display: inline-block;\n  float: none; }\n\n.navbar-nav li {\n    margin-left: 1px;\n    margin-right: 3px; }\n\n.navbar-nav i {\n    font-size: 1.9em; }\n\n.navbar-nav span {\n    font-size: .65em; }\n\n@media (max-width: 450px) {\n  li {\n    float: left; } }\n\n.navbar-default {\n  background-color: #FFF; }\n\n@media (pointer: fine) {\n  a span {\n    display: none; }\n  a:hover span {\n    display: inline-block; } }\n"
+module.exports = ".container-fluid {\n  text-align: center; }\n\n.navbar-nav {\n  display: inline-block;\n  float: none; }\n\n.navbar-nav li {\n    margin-left: 0px;\n    margin-right: 0px; }\n\n.navbar-nav i {\n    font-size: 1.9em; }\n\n.navbar-nav span {\n    font-size: .65em; }\n\n@media (max-width: 450px) {\n  li {\n    float: left; } }\n\n.navbar-default {\n  background-color: #FFF; }\n\n@media (pointer: fine) {\n  a span {\n    display: none; }\n  a:hover span {\n    display: inline-block; } }\n"
 
 /***/ }),
 
@@ -2930,7 +2930,7 @@ var TableauSearchComponent = (function () {
 /***/ "./src/app/modules/analytics/v1/components/tableau/tableauView.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row panel panel-default\" style=\"max-width:750px;margin-left:10px;margin-right:10px;background-color: #FFF\">\r\n    <div class=\"col-xs-12\">\r\n          <div id=\"{{visIndex}}\" style=\"width:100%; display:flex; justify-content:center\" ></div> \r\n          <!-- <div class=\"row\" *ngIf=\"comments==2\">\r\n            <app-tableau-commentstwo-component>\r\n            </app-tableau-commentstwo-component>\r\n        </div>   -->\r\n        <div class=\"row\" *ngIf=\"comments==2\">\r\n                <app-tableauinbox-component [tabticket]=\"tabticket\">\r\n                </app-tableauinbox-component>\r\n            </div>   \r\n        <div class=\"row\" *ngIf=\"comments==1\">\r\n            <app-tableau-comments-component [tabticket]=\"tabticket\">\r\n            </app-tableau-comments-component>\r\n        </div>       \r\n    </div>\r\n  </div>"
+module.exports = "<div class=\"row panel panel-default\" style=\"max-width:750px;margin-left:10px;margin-right:10px;background-color: #FFF\">\r\n    <div class=\"col-xs-12\">\r\n          <div id=\"{{visIndex}}\" style=\"width:100%; display:flex; justify-content:center\" ></div> \r\n          <!-- <div class=\"row\" *ngIf=\"comments==2\">\r\n            <app-tableau-commentstwo-component>\r\n            </app-tableau-commentstwo-component>\r\n        </div>   -->\r\n        <div class=\"row\" *ngIf=\"comments==2\">\r\n                <app-tableauinbox-component [tabticket]=\"tabticket\">\r\n                </app-tableauinbox-component>\r\n            </div>   \r\n        <div class=\"row\" *ngIf=\"comments==1\">\r\n            <app-tableauinbox-component [tabticket]=\"tabticket\">\r\n            </app-tableauinbox-component>\r\n        </div>       \r\n    </div>\r\n  </div>"
 
 /***/ }),
 
